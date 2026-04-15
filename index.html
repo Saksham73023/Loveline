@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loveline ❤️</title>
+</head>
+<body style="text-align:center; margin-top:100px;">
+
+    <h1>Do you love me? 😍</h1>
+
+    <button onclick="yesClick()">YES ❤️</button>
+    <button onclick="noClick()" id="noBtn">NO 😢</button>
+
+    <script>
+        function yesClick() {
+            alert("I knew it 😍❤️");
+        }
+
+        function noClick() {
+            var btn = document.getElementById("noBtn");
+            btn.style.position = "absolute";
+            btn.style.left = Math.random() * 300 + "px";
+            btn.style.top = Math.random() * 300 + "px";
+        }
+    </script>
+
+</body>
+</html>
